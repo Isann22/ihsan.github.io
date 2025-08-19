@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio | Ihsan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="particles-container">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="main-layout">
+
+    <div class="left-column">
+      <header>
+        <h1>IHSAN RAMADHAN<span class="blinking-cursor">_</span></h1>
+        <p class="subtitle">BACKEND ENTHUSIAST</p>
+        <a href="./cv-ihsan.pdf" download class="cv-button">DOWNLOAD CV</a>
+      </header>
+
+      <section id="personal-endpoints">
+        <h2>// General Info</h2>
+
+        <div class="info-item" id="about-me-item">
+          <div class="info-item-header">
+            <span class="method get">GET</span>
+            <span class="path">/about_me</span>
+          </div>
+        </div>
+
+        <div class="info-item" id="skills-item">
+          <div class="info-item-header">
+            <span class="method get">GET</span>
+            <span class="path">/tech_stack</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="right-column">
+
+      <section id="projects">
+        <h2> Projects</h2>
+
+      </section>
+    </div>
+
+  </div>
+
+
+  <div id="item-modal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title"></h3>
+        <button id="modal-close" class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <pre><code id="modal-json"></code></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
